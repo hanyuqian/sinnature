@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>车辆退/还车申请表</title>
+  <link rel="stylesheet" href="../static/css/refund-car.css" />
+  <link rel="stylesheet" href="../../signature/example/css/signature-pad.css">
+</head>
+<body>
+<div class="refund-bar">
+    <h2 class="refund-car-h2 t-c">车辆退/还车申请表
+      <div class="logo "><img src="../static/img/ucar-logo.png" /></div>
+    </h2>
+  <table>
+    <tbody>
+      <tr>
+        <td colspan="6" class="f-b">租车人填写</td>
+      </tr>
+      <tr>
+        <td class="name">车牌号码</td>
+        <td class="content"><input type="text" class="edit-inp" /></td>
+        <td class="name">电机号</td>
+        <td class="content"><input type="text" class="edit-inp" /></td>
+        <td class="name">租赁起始日期</td>
+        <td class="content">
+          <div class="lh-min embed-div">
+            <input type="text" class="date-inp start-year" />年<input type="text" class="date-inp" />月<input type="text" class="date-inp" />日
+          </div>
+          <div class="lh-min embed-div">
+            至<input type="text" class="date-inp end-year" />年<input type="text" class="date-inp" />月<input type="text" class="date-inp" />日
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>申请日期</td>
+        <td><input type="text" class="edit-inp" /></td>
+        <td>联系电话</td>
+        <td><input type="text" class="edit-inp" /></td>
+        <td>工作单位</td>
+        <td><textarea class="edit-textarea" rows="2" >工作单位工作单作单位</textarea></td>
+      </tr>
+      <tr>
+        <td>租车人姓名</td>
+        <td><input type="text" class="edit-inp" /></td>
+        <td>证件类别</td>
+        <td><input type="text" class="edit-inp" /></td>
+        <td>证件号码</td>
+        <td><input type="text" class="edit-inp" /></td>
+      </tr>
+      <tr>
+        <td>代理人姓名</td>
+        <td><input type="text" class="edit-inp" /></td>
+        <td>证件类别</td>
+        <td><input type="text" class="edit-inp" /></td>
+        <td>证件号码</td>
+        <td><input type="text" class="edit-inp" /></td>
+      </tr>
+      <tr>
+        <td>退款方式</td>
+        <td colspan="5" class="n-p b-r-b">
+          <table class="n-b">
+            <tr>
+              <td colspan="4" class="no-b-r"><input type="checkbox" class="check-inp" />银行卡（需与原会员协议附件银行卡复印件一致）</td>
+            </tr>
+            <tr>
+              <td>持卡人姓名</td>
+              <td><input type="text" class="edit-inp" /></td>
+              <td>银行卡类型</td>
+              <td class="no-b-r"><input type="text" class="edit-inp" /></td>
+            </tr>
+            <tr>
+              <td class="no-b-b">开户银行</td>
+              <td class="no-b-b"><input type="text" class="edit-inp" /></td>
+              <td class="no-b-b">银行卡号</td>
+              <td class="no-b-r no-b-b"><input type="text" class="edit-inp" /></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="6" class="t-l p-l-39">
+          <div class="lh-min embed-div">
+            退/还车原因：
+            <input type="checkbox" class="check-inp" />到期还车&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" class="check-inp" />逾期还车&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" class="check-inp" />车辆故障换车 原车车牌号<input type="text" class="long-inp" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+            <span class="p-l-93"><input type="checkbox" class="check-inp" />其他：<input type="text" class="longest-inp" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br/><br/>
+            <span class="p-l-350">申请人/客户签名：
+              <input type="text" class="edit-inp sign" />
+              <input type="text" class="date-inp start-year no-b-b" />年
+              <input type="text" class="date-inp start-year no-b-b" />月
+              <input type="text" class="date-inp start-year no-b-b" />日
+            </span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="6" class="f-b">湖南能翔优卡新能源汽车运营有限公司填写</td>
+      </tr>
+      <tr>
+        <td>业务跟进人</td>
+        <td><input type="text" class="edit-inp" /></td>
+        <td>查询时间</td>
+        <td><input type="text" class="edit-inp" /></td>
+        <td>有无逾期</td>
+        <td><input type="radio" class="check-inp" name="has" />有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" class="check-inp" name="has" />无</td>
+      </tr>
+      <tr>
+        <td colspan="6" class="t-l p-l-30">
+          逾期租金金额合计：￥：<input type="text" class="edit-inp sign" /> 大写：<input type="text" class="edit-inp sign" />
+        </td>
+      </tr>
+      <tr>
+        <td>车辆查验人</td>
+        <td><input type="text" class="edit-inp" /></td>
+        <td>查询时间</td>
+        <td><input type="text" class="edit-inp" /></td>
+        <td>有无赔偿金</td>
+        <td><input type="radio" class="check-inp" name="has" />有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" class="check-inp" name="has" />无</td>
+      </tr>
+      <tr>
+        <td colspan="6" class="t-l p-l-30">
+          赔偿金合计：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;￥：<input type="text" class="edit-inp sign" /> 大写：<input type="text" class="edit-inp sign" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="6" class="t-l p-l-30 lh-min ">
+          注：如有租用车辆有损毁，还车查验时需告知会员，要求会员签署车辆查验表；告知会员具体赔偿金额，赔偿金由湖南能 翔优卡新能源汽车运营有限公司从保证金中扣除，不足部分要求租车人补交。具体车辆查验详情见合同《还车验收单》 。
+        </td>
+      </tr>
+      <tr>
+        <td>车辆入库经手人</td>
+        <td colspan="2"><input type="text" class="edit-inp" /></td>
+        <td>入库日期</td>
+        <td colspan="2"><input type="text" class="edit-inp" /></td>
+      </tr>
+      <tr>
+        <td>档案入库经手人</td>
+        <td colspan="2"><input type="text" class="edit-inp" /></td>
+        <td>入库日期</td>
+        <td colspan="2"><input type="text" class="edit-inp" /></td>
+      </tr>
+      <tr>
+        <td>保险事故查验</td>
+        <td colspan="2"><input type="text" class="edit-inp" /></td>
+        <td>有无事故补偿金</td>
+        <td colspan="2"><input type="radio" class="check-inp" name="has" />有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" class="check-inp" name="has" />无</td>
+      </tr>
+      <tr>
+        <td>事故补偿金额</td>
+        <td colspan="5" class="p-l-30 t-l">￥：<input type="text" class="edit-inp sign" /> 大写：<input type="text" class="edit-inp sign" /></td>
+      </tr>
+      <tr>
+        <td colspan="6" class="t-l p-l-30 lh-min ">
+          注：承租车辆损失金额在 2000 元（含）以内的，乙方应承担事故补偿金，以一年租车时间为单位，甲方按第一次 300 元， 第二次 600 元，第三次及以上按 1800 元/次标准收取；承租车辆损失金额超出 2000 元的，客户另需加收事故补偿金，补偿 金金额为超出 2000 元以上部分的 10%。
+        </td>
+      </tr>
+      <tr>
+        <td>违章查询人</td>
+        <td><input type="text" class="edit-inp" /></td>
+        <td>查询时间</td>
+        <td><input type="text" class="edit-inp" /></td>
+        <td>有无违章记录</td>
+        <td><input type="radio" class="check-inp" name="has" />有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" class="check-inp" name="has" />无</td>
+      </tr>
+      <tr>
+        <td>违章未处理合计</td>
+        <td colspan="5" class="p-l-30 t-l">￥：<input type="text" class="edit-inp sign" /> 大写：<input type="text" class="edit-inp sign" /></td>
+      </tr>
+      <tr>
+        <td colspan="6" class="t-l p-l-30 lh-min ">
+          注：如有租用车辆违章，告知会员限一周内及时处理；如会员因其他原因未处理，则由湖南能翔优卡新能源汽车运营有限 公司从违章保证金中扣除办理。
+        </td>
+      </tr>
+      <tr>
+        <td colspan="6" class="f-b">退 款 明 细</td>
+      </tr>
+      <tr>
+        <td>已收保证金金额</td>
+        <td>车辆保证金</td>
+        <td><input type="text" class="edit-inp" /></td>
+        <td>违章保证金</td>
+        <td colspan="2"><input type="text" class="edit-inp" /></td>
+      </tr>
+      <tr>
+        <td>扣罚金额</td>
+        <td colspan="5" class="n-p b-r-b">
+          <table class="n-b">
+            <tr>
+              <td>逾期租金</td>
+              <td><input type="text" class="edit-inp" /></td>
+              <td>车辆赔偿金</td>
+              <td class="no-b-r"><input type="text" class="edit-inp" /></td>
+            </tr>
+            <tr>
+              <td class="no-b-b">事故补偿金</td>
+              <td class="no-b-b"><input type="text" class="edit-inp" /></td>
+              <td class="no-b-b">违章违约金</td>
+              <td class="no-b-r no-b-b"><input type="text" class="edit-inp" /></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>应退保证金金额</td>
+        <td>车辆保证金</td>
+        <td><input type="text" class="edit-inp" /></td>
+        <td>违章保证金</td>
+        <td colspan="2"><input type="text" class="edit-inp" /></td>
+      </tr>
+      <tr>
+        <td colspan="6" class="t-l p-l-30 lh-min ">
+          注：车辆保证金在客户还车后 3 个工作日内无息退还，违章保证金在客户还车后 15 个工作日内无息退还。
+        </td>
+      </tr>
+      <tr>
+        <td colspan="6" class="t-l p-l-30 sign-name">
+          财务会计签名：<span id="sign-name-img" class="sign-name-img"></span>
+          <span class="fr m-r">
+            <input type="text" class="date-inp start-year no-b-b" />年
+            <input type="text" class="date-inp start-year no-b-b" />月
+            <input type="text" class="date-inp start-year no-b-b" />日
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="6" class="t-l p-l-30">
+          业务副总签名：
+          <input type="text" class="edit-inp sign" />
+          <span class="fr m-r">
+            <input type="text" class="date-inp start-year no-b-b" />年
+            <input type="text" class="date-inp start-year no-b-b" />月
+            <input type="text" class="date-inp start-year no-b-b" />日
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="6" class="t-l p-l-30">
+          常务副总签名
+          <input type="text" class="edit-inp sign" />
+          <span class="fr m-r">
+            <input type="text" class="date-inp start-year no-b-b" />年
+            <input type="text" class="date-inp start-year no-b-b" />月
+            <input type="text" class="date-inp start-year no-b-b" />日
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="mask-box">
+    <div id="signature-pad" class="m-signature-pad">
+      <div class="m-signature-pad--body">
+        <canvas width="100%" height="430"></canvas>
+      </div>
+      <div class="m-signature-pad--footer">
+        <div class="description">请签名</div>
+        <div class="left">
+          <button type="button" class="button clear" data-action="clear">重置</button>
+        </div>
+        <div class="right">
+          <button type="button" class="button save" data-action="save-png">保存为PNG</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../../../product/zepto.min.js"></script>
+<script src="../../signature/example/js/signature_pad.js"></script>
+<script src="../../signature/example/js/app.js"></script>
+</body>
+</html>
